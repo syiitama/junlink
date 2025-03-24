@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JUNLINK|KONTAK</title>
+
+    <!-- link css -->
+    <link rel="stylesheet" href="style.css">
+
+    <!-- Favicon -->
+    <link rel="shortcutn icon" href="assets/images/logo/Favicon-color.png">
+
+    <!-- font link -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+        integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <!-- test css -->
+
+    <!-- test css end -->
+</head>
+<!-- head end -->
+
+<body>
+    <header class="container">
+        <img src="assets/images/logo/logo-white-rounded.png" alt="" class="header-img">
+        <h1>JUNLINK SERVICE CENTER</h1>
+        <P>Anywhere Anytime</P>
+
+
+    </header>
+    <!-- header end -->
+
+    <!-- container -->
+    <div id="menubtn_continer">
+        <span>
+            <a href="javascript:void(0);"
+                class="topnav-icons fa fa-menu w3-hide-large w3-left w3-bar-item w3-button ga-nav"
+                style="line-height:1.1;padding-top:8px!important;padding-bottom:8px!important;" onclick="open_menu()"
+                title="Menu"></a>
+        </span>
+
+        <a href="index.html">
+            <div class="dropdown">
+                <button class="dropbtn"><i class="fa-solid fa-igloo"></i></button>
+            </div>
+        </a>
+        <a href="layanan.html">
+            <div class="dropdown">
+                <button class="dropbtn">Layanan</button>
+            </div>
+        </a>
+        <a href="harga.html">
+            <div class="dropdown">
+                <button class="dropbtn">Harga</button>
+            </div>
+        </a>
+        <a href="testimoni.html">
+            <div class="dropdown">
+                <button class="dropbtn">Galeri</button>
+            </div>
+        </a>
+        <a href="kontak.html">
+            <div class="dropdown">
+                <button class="dropbtn">Kontak</button>
+            </div>
+        </a>
+    </div>
+    <!-- container menu end -->
+
+
+
+    <!-- junlink -->
+    <section>
+        <div class="junlink">
+            <h2>KONTAK</h2>
+            <!-- isi konten -->
+            <div>
+                <div class="junlink-card">
+                    <!-- <img src="assets/images/logo/Favicon-color.png" alt=""> -->
+                    <h3>Hubungi Kami</h3>
+                    <h4>Informasi Kontak</h4>
+                    <p>Deskripsi singkat tentang pengalaman
+                        pelanggan dengan produk/jasa Anda.
+                    </p>
+
+                    <ol>
+                        <li> Alamat: Jl. Batu Putih Atas No. 41
+                        </li> <br>
+                        <li>Nomor Telepon: <a href="#" target="_blank">081336525935</a>
+                        </li> <br>
+                        <li>WhatsApp: <a href="#" target="_blank">081336525935</a>
+                        </li> <br>
+                        <li>Email: <a href="#" target="_blank">jun.link.service@gmail.com</a>
+                        </li><br>
+                        <li>Jam Operasional: <br>Senin- Jumat (09:00-17-00), <br>Sabtu (08:00-20:00), <br> <strong>
+                                Minggu (Tutup)</strong>
+                        </li>
+                    </ol>
+                </div>
+            </div>
+            <!-- isi konten end -->
+        </div>
+
+    </section>
+    <!-- junlink -->
+
+    <!-- section end -->
+
+    <!-- lokasi-->
+    <!--Tambahan
+                     1. Google Maps iframe atau API untuk menampilkan lokasi perusahaan.
+                    2. Alamat yang dapat diklik untuk membuka peta. 
+                     -->
+
+    <div class="map-container">
+        <h1>My Google Map</h1>
+        <iframe src="https://maps.app.goo.gl/7kLDxXeECXrnUD3SA" frameborder="0" width="100%" height="400"
+            allowfullscreen></iframe>
+    </div>
+    <!-- lokasi end -->
+
+
+    <!-- Formulir kontak -->
+    <div class="kontak-container">
+        <h2>Hubungi Kami</h2>
+        <form action="#" method="post"> 
+            <label for="">Nama:</label>
+            <input type="text" id="nama" name="nama" required>
+
+            <label for="">Email:</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="">Telepon:</label>
+            <input type="tel" name="telepon" id="telepon" required>
+
+            <label for="">Pesan:</label>
+            <textarea name="pesan" id="pesan" required></textarea>
+
+            <button type="submit"> Kirim </button>
+        </form>
+    </div>
+    <!-- formulir kontak end -->
+
+    <!-- section contact -->
+    <!-- <section class="contact">
+        <h2>Hubungi Kami</h2>
+        <div class="social-icons">
+            <a href="#" target=""><i class="fa-brands fa-github"> </i> </a>
+            <a href="#" target="_blank"><i class="fa-brands fa-whatsapp"></i> </a>
+            <a href="#"><i class="fa-brands fa-facebook"></i> </a>
+            <a href="#"><i class="fa-brands fa-square-instagram"></i> </a>
+
+        </div>
+
+
+    </section> -->
+
+    <!-- footer end -->
+
+    <!-- test js -->
+    <script src="main.js">    </script>
+    <!-- test js end -->
+
+    <footer>
+        2025 Albert Runtuboi. Dibuat dan dikembangkan oleh
+        <a href="https://github.com/albertruntuboi" target="_blank">Albert Runtuboi</a>
+    </footer>
+
+
+    <script>
+        function myMap() {
+            var mapProp = {
+                center: new google.maps.LatLng(51.508742, -0.120850),
+                zoom: 5,
+            };
+            var map = new google.maps.Map(document.getElementById("googleMap"), mapProp);
+        }
+    </script>
+
+    <script src="https://maps.googleapis.com/maps/api/js?key=YOUR_KEY&callback=myMap"></script>
+
+</body>
+<!-- body end -->
+
+
+</html>
